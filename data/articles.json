@@ -1,0 +1,67 @@
+[
+  {
+    "title": "The Future of Black-Owned Businesses in America",
+    "excerpt": "Exploring the challenges and opportunities facing Black entrepreneurs in today's economy.",
+    "content": "Black-owned businesses have been growing at an unprecedented rate, but still face significant challenges in accessing capital and resources. According to recent studies, Black entrepreneurs are three times more likely to be denied loans than their white counterparts. Despite these hurdles, initiatives like the Black Business Alliance and targeted venture capital funds are helping to level the playing field. The resilience and innovation of Black business owners continue to drive economic growth in communities across America. Many Black-owned businesses are now embracing e-commerce and digital marketing to reach wider audiences and compete in the global marketplace.",
+    "category": "economy",
+    "author": "Marcus Johnson",
+    "featuredImage": "https://images.unsplash.com/photo-1553877522-43269d4ea984",
+    "tags": ["business", "entrepreneurship", "economy"],
+    "views": 2450,
+    "readTime": 5,
+    "publishedAt": "2024-01-15T10:30:00Z",
+    "isFeatured": true
+  },
+  {
+    "title": "Celebrating Afro-Latino Heritage and Culture",
+    "excerpt": "A deep dive into the rich cultural contributions of Afro-Latinos across the Americas.",
+    "content": "Afro-Latino culture represents a beautiful fusion of African and Latin American traditions that has profoundly influenced music, art, cuisine, and language throughout the Western Hemisphere. From the son Cubano music of Cuba to the capoeira of Brazil, African heritage is woven into the fabric of Latin American societies. This article explores the often-overlooked contributions of Afro-Latinos and highlights contemporary artists and activists who are reclaiming and celebrating this dual heritage in the 21st century. The resilience and creativity of Afro-Latino communities continue to shape cultural landscapes across the Americas.",
+    "category": "culture",
+    "author": "Isabel Rodriguez",
+    "featuredImage": "https://images.unsplash.com/photo-1539635278303-d4002c07eae3",
+    "tags": ["culture", "heritage", "identity"],
+    "views": 1890,
+    "readTime": 7,
+    "publishedAt": "2024-01-10T14:45:00Z",
+    "isFeatured": true
+  },
+  {
+    "title": "The State of Black Maternal Health in 2024",
+    "excerpt": "Examining the disparities and initiatives in Black maternal healthcare across the US.",
+    "content": "Black women in the United States are three to four times more likely to die from pregnancy-related causes than white women, according to CDC data. This alarming disparity persists regardless of income or education level. This article examines the root causes of these disparities, including systemic racism in healthcare, implicit bias among providers, and socioeconomic factors. We also highlight promising initiatives like doula programs, community-based care models, and policy changes aimed at reducing these inequities. Addressing these disparities requires a multi-faceted approach involving healthcare providers, policymakers, and community organizations.",
+    "category": "health",
+    "author": "Dr. Keisha Williams",
+    "featuredImage": "https://images.unsplash.com/photo-1551601651-2a8555f1a136",
+    "tags": ["health", "women", "equity"],
+    "views": 1560,
+    "readTime": 8,
+    "publishedAt": "2024-01-05T09:15:00Z",
+    "isFeatured": false
+  },
+  {
+    "title": "HBCUs: Preserving Legacy While Embracing Innovation",
+    "excerpt": "How Historically Black Colleges and Universities are adapting to modern education needs.",
+    "content": "Historically Black Colleges and Universities (HBCUs) have been pillars of the African American community for over 150 years, producing leaders in every field. Today, these institutions face the dual challenge of preserving their unique cultural legacies while adapting to 21st-century educational demands. From expanding STEM programs to developing new online learning platforms, HBCUs are innovating to serve today's students. This article profiles several HBCUs that are successfully balancing tradition with innovation, including Howard University's new tech incubator and Spelman College's digital humanities initiative. The future of HBCUs looks bright as they continue to evolve and expand their impact.",
+    "category": "education",
+    "author": "Malik Thompson",
+    "featuredImage": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1",
+    "tags": ["education", "HBCU", "innovation"],
+    "views": 2100,
+    "readTime": 6,
+    "publishedAt": "2024-01-01T08:00:00Z",
+    "isFeatured": false
+  },
+  {
+    "title": "Voting Rights and Black Political Power in 2024",
+    "excerpt": "Analyzing the current state of voting rights and political representation in Black communities.",
+    "content": "The 2024 election cycle brings renewed focus on voting rights and political representation within Black communities. Recent legislative changes in various states have raised concerns about voter suppression and access to the ballot box. This article examines the historical context of voting rights for Black Americans, current challenges, and strategies for increasing political engagement. We speak with activists, lawmakers, and community organizers about the path forward for ensuring equitable representation and protecting the hard-won right to vote that remains fundamental to democracy.",
+    "category": "politics",
+    "author": "Aisha Washington",
+    "featuredImage": "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c",
+    "tags": ["politics", "voting", "rights"],
+    "views": 3200,
+    "readTime": 7,
+    "publishedAt": "2024-01-20T11:00:00Z",
+    "isFeatured": true
+  }
+]

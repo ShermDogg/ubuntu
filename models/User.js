@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
-const crypto = require('crypto');
 
 const userSchema = new mongoose.Schema({
   firstName: {
@@ -34,11 +33,15 @@ const userSchema = new mongoose.Schema({
     enum: ['reader', 'contributor', 'admin'],
     default: 'reader'
   },
-  bio: {
-    type: String,
-    default: ''
+  emailVerified: {
+    type: Boolean,
+    default: false
   },
   createdAt: {
+    type: Date,
+    default: Date.now
+  },
+  updatedAt: {
     type: Date,
     default: Date.now
   },
@@ -47,26 +50,27 @@ const userSchema = new mongoose.Schema({
   }
 });
 
-// Hash password before saving
-userSchema.pre('save', async function(next) {
-  if (!this.isModified('password')) return next();
-  
-  const salt = await bcrypt.genSalt(10);
-  this.password = await bcrypt.hash(this.password, salt);
-  next();
-});
-
 // Method to check password
 userSchema.methods.comparePassword = async function(candidatePassword) {
   return await bcrypt.compare(candidatePassword, this.password);
 };
 
-// Generate Gravatar URL
-userSchema.methods.getGravatar = function(size = 200) {
-  if (this.avatar) return this.avatar;
-  
-  const md5 = crypto.createHash('md5').update(this.email).digest('hex');
-  return `https://www.gravatar.com/avatar/${md5}?s=${size}&d=mp`;
+// Static method to hash password
+userSchema.statics.hashPassword = async function(password) {
+  return await bcrypt.hash(password, 10);
 };
 
-module.exports = mongoose.model('User', userSchema);
+// Method to get avatar
+userSchema.methods.getAvatar = function() {
+  if (this.avatar) return this.avatar;
+  return `https://ui-avatars.com/api/?name=${encodeURIComponent(this.firstName + ' ' + this.lastName)}&background=007bff&color=fff`;
+};
+
+// Virtual for full name
+userSchema.virtual('fullName').get(function() {
+  return `${this.firstName} ${this.lastName}`;
+});
+
+const User = mongoose.model('User', userSchema);
+
+module.exports = User;

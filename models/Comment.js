@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 const commentSchema = new mongoose.Schema({
   articleId: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Article',
     required: true
   },
   userId: {
@@ -14,12 +15,26 @@ const commentSchema = new mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-    minlength: 1,
     maxlength: 1000
   },
-  isApproved: {
+  likes: [{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User'
+  }],
+  replies: [{
+    userId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'User'
+    },
+    content: String,
+    createdAt: {
+      type: Date,
+      default: Date.now
+    }
+  }],
+  isEdited: {
     type: Boolean,
-    default: true
+    default: false
   },
   createdAt: {
     type: Date,
